@@ -1,0 +1,64 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Desarrollo\node\node.exe C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] CLI Version:  3.2.1
+[debug] Platform:     win32
+[debug] Node Version: v6.9.2
+[debug] Time:         Fri Dec 23 2016 12:38:18 GMT+0100 (Hora estándar romance)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Desarrollo\html\friendlychat
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] >>> HTTP REQUEST GET https://friendlychat-38878.firebaseio.com/.settings/rules.json 
+[debug] <<< HTTP RESPONSE 200
+[info] +  Database Rules for friendlychat-38878 have been downloaded to y.
+[info] Future modifications to y will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] Error: ENOENT: no such file or directory, open 'C:\Desarrollo\html\friendlychat\y\index.html'
+    at Error (native)
+    at Object.fs.openSync (fs.js:640:18)
+    at Object.fs.writeFileSync (fs.js:1333:33)
+    at Object.createFileSync (C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:34:6)
+    at Config.writeProjectFile (C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:183:6)
+    at C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:203:12
+    at tryCatch (C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:538:12)
+    at invokeCallback (C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:553:13)
+    at C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:628:16
+    at flush (C:\Users\CURSO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:2373:5)
+[error] 
+[error] Error: An unexpected error has occurred.
